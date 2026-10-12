@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toledo City Science High School</title>
+<meta name="description" content="Toledo City Science High School — Science, Innovation, Excellence.">
+
+<!-- GOOGLE FONTS (merged into one request) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<!-- ICONS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================
+     TCSHS INTRO (with light sweep)
+========================= -->
+<div id="logo-intro">
+    <div class="intro-logo-wrap">
+        <img src="logo.jpg" class="intro-logo" alt="Toledo City Science High School Logo">
+        <div class="school-name">TOLEDO CITY SCIENCE HIGH SCHOOL</div>
+        <!-- DIAGONAL LIGHT -->
+        <div class="light-sweep"></div>
+    </div>
+</div>
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+<header class="navbar">
+    <a href="#home" class="brand">
+        <img src="logo.jpg" alt="TCSHS Logo">
+        <div>
+            <strong>TCSHS</strong>
+            <small>Toledo City Science High School</small>
+        </div>
+    </a>
+
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open navigation">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav id="main-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#history">History</a>
+        <a href="#academics">Academics</a>
+        <a href="#life">Student Life</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#houses">Houses</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#how-to-apply">How to Apply</a>
+
+        <a href="#admission-portal" class="nav-apply">
+            Apply <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </nav>
+</header>
+
+<main>
+
+<!-- =====================================================
+     HERO / HOME
+===================================================== -->
+<section id="home" class="hero">
+
+    <!-- BACKGROUND SLIDES (change image files here) -->
+    <div class="hero-slide active" style="background-image: url('12.jpg');"></div>
+    <div class="hero-slide" style="background-image: url('21.jpg');"></div>
+    <div class="hero-slide" style="background-image: url('25.jpg');"></div>
+
+    <!-- DARK OVERLAY -->
+    <div class="hero-overlay"></div>
+    <canvas id="atomCanvas"></canvas>
+
+    <!-- HERO CONTENT -->
+    <div class="hero-content">
+        <div class="eyebrow"><span></span> TOLEDO CITY • CEBU</div>
+
+        <h1>
+        TOLEDO CITY
+            <em>SCIENCE</em>
+           HIGH
+            <strong>SCHOOL</strong>
+        </h1>
+
+        <p>
+            Discover a learning environment built for curious minds,
+            young innovators, researchers, and future leaders.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#about" class="btn btn-gold">
+                Explore TCSHS <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <a href="#admission-portal" class="btn btn-outline">
+                Admission Portal <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- SCROLL INDICATOR -->
+    <div class="hero-scroll">
+        <span>SCROLL TO EXPLORE</span>
+        <i class="fa-solid fa-arrow-down"></i>
+    </div>
+
+    <!-- SLIDE COUNTER -->
+    <div class="hero-counter">
+        <strong class="hero-number">01</strong>
+        <span>/ 03</span>
+    </div>
+</section>
+
+
+<!-- =====================================================
+     QUICK INFORMATION
+===================================================== -->
+<section class="quick-info">
+
+    <a href="#academics" class="quick-card">
+        <div class="quick-icon"><i class="fa-solid fa-flask"></i></div>
+        <div class="quick-content"><small>DISCOVER</small><strong>Academics</strong></div>
+        <div class="quick-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+    </a>
+
+    <a href="#achievements" class="quick-card">
+        <div class="quick-icon"><i class="fa-solid fa-trophy"></i></div>
+        <div class="quick-content"><small>CELEBRATE</small><strong>Achievements</strong></div>
+        <div class="quick-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+    </a>
+
+    <a href="#houses" class="quick-card">
+        <div class="quick-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="quick-content"><small>MEET THE</small><strong>Houses</strong></div>
+        <div class="quick-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+    </a>
+
+    <a href="#life" class="quick-card">
+        <div class="quick-icon"><i class="fa-solid fa-users"></i></div>
+        <div class="quick-content"><small>EXPERIENCE</small><strong>Student Life</strong></div>
+        <div class="quick-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+    </a>
+
+    <a href="#how-to-apply" class="quick-card featured">
+        <div class="quick-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="quick-content"><small>BEGIN HERE</small><strong>How to Apply</strong></div>
+        <div class="quick-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+    </a>
+
+</section>
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+<section id="about" class="section about-section">
+
+    <div class="section-label">01 — ABOUT TCSHS</div>
+
+    <div class="about-grid">
+
+        <div class="about-heading reveal">
+            <p class="gold-text">MORE THAN A SCHOOL.</p>
+            <h2>A place for <span>curious minds.</span></h2>
+        </div>
+
+        <div class="about-text reveal">
+            <!-- CHANGE TEXT HERE -->
+            <p>
+                Toledo City Science High School provides an environment
+                where students are encouraged to explore science,
+                technology, research, creativity, and leadership.
+            </p>
+            <p>
+                Through academic experiences and student-centered
+                activities, TCSHS aims to develop learners who are
+                prepared to contribute meaningfully to their community
+                and to the world beyond the classroom.
+            </p>
+            <a href="#history" class="text-link">
+                Learn more about our story <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="about-image-grid reveal">
+
+        <div class="large-image image-card">
+            <!-- CHANGE IMAGE HERE -->
+            <img src="1.jpg" alt="TCSHS Students">
+            <div class="image-caption"><span>01</span><strong>LEARNING TOGETHER</strong></div>
+        </div>
+
+        <div class="small-image image-card">
+            <!-- CHANGE IMAGE HERE -->
+            <img src="17.jpg" alt="Science Laboratory">
+            <div class="image-caption"><span>02</span><strong>DISCOVERING SCIENCE</strong></div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     HISTORY
+===================================================== -->
+<section id="history" class="history-section">
+
+    <div class="history-bg"></div>
+
+    <div class="history-content">
+
+        <div class="section-label light">  <img src="bg1.jpg">02 — OUR STORY</div>
+
+        <div class="history-grid">
+
+            <div>
+                <p class="gold-text">THE TCSHS STORY</p>
+                <h2>Rooted in <span>excellence.</span></h2>
+            </div>
+
+            <div class="history-copy">
+                <!-- CHANGE HISTORY TEXT HERE -->
+                <p>
+                    Toledo City Science High School is part of Toledo
+                    City's continuing commitment to developing students
+                    with strong foundations in science and technology.
+                </p>
+                <p>
+                   It was founded in 1996 to provide quality science and mathematics education to students. It began with only 25 first-year students and was initially annexed to Bato National High School, which served as its lead school in the Toledo City Division. Since its establishment, the school has continued to focus on science, mathematics, research, and academic excellence. It aims to develop students' knowledge, skills, and talents to prepare them for future challenges.
+                </p>
+
+                <div class="history-stat">
+                    <strong>SCIENCE</strong>
+                    <span>•</span>
+                    <strong>INNOVATION</strong>
+                    <span>•</span>
+                    <strong>EXCELLENCE</strong>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ACADEMICS
+===================================================== -->
+<section id="academics" class="section academics-section">
+
+    <div class="section-label">03 — ACADEMICS</div>
+
+    <div class="section-heading">
+        <div>
+            <p class="gold-text">LEARNING BEYOND THE CLASSROOM</p>
+            <h2>Explore. <span>Question.</span> Create.</h2>
+        </div>
+        <p>
+            Science high school is more than memorizing formulas.
+            It is about learning how to ask better questions and
+            build meaningful solutions.
+        </p>
+    </div>
+
+    <div class="academic-cards">
+
+        <article class="academic-card reveal"
+            onclick="openInfoModal('Science & Mathematics', ' Provides a strong foundation in science and mathematics, helping students develop critical thinking, analytical skills, and problem-solving abilities through lessons, experiments, and practical applications.')">
+            <div class="card-number">01</div>
+            <i class="fa-solid fa-atom"></i>
+            <h3>Science &amp; Mathematics</h3>
+            <p>Build foundations for scientific thinking and mathematical problem-solving.</p>
+            <span>EXPLORE <i class="fa-solid fa-arrow-right"></i></span>
+        </article>
+
+        <article class="academic-card reveal"
+            onclick="openInfoModal('Research','Encourages students to explore ideas, investigate real-world problems, and develop evidence-based solutions. Through research projects, students strengthen their skills in data gathering, analysis, scientific inquiry, and innovation.')">
+            <div class="card-number">02</div>
+            <i class="fa-solid fa-microscope"></i>
+            <h3>Research &amp; Innovation</h3>
+            <p>Turn questions into investigations and ideas into possible solutions.</p>
+            <span>EXPLORE <i class="fa-solid fa-arrow-right"></i></span>
+        </article>
+
+        <article class="academic-card reveal"
+            onclick="openInfoModal('Technology','provides a strong foundation in science and mathematics, helping students develop critical thinking, analytical skills, and problem-solving abilities through lessons, experiments, and practical applications.')">
+            <div class="card-number">03</div>
+            <i class="fa-solid fa-microchip"></i>
+            <h3>Technology &amp; Engineering</h3>
+            <p>Explore technology, design, systems, and innovative thinking.</p>
+            <span>EXPLORE <i class="fa-solid fa-arrow-right"></i></span>
+        </article>
+
+        <article class="academic-card reveal"
+            onclick="openInfoModal('Leadership','Nurtures student leaders through school organizations, student-led initiatives, and school activities that promote teamwork, responsibility, and service to the community.')">
+            <div class="card-number">04</div>
+            <i class="fa-solid fa-lightbulb"></i>
+            <h3>Leadership &amp; Creativity</h3>
+            <p>Develop confidence, collaboration, creativity, and responsibility.</p>
+            <span>EXPLORE <i class="fa-solid fa-arrow-right"></i></span>
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FEATURE SPLIT
+===================================================== -->
+<section class="feature-section">
+
+    <div class="feature-image">
+        <!-- CHANGE IMAGE -->
+        <img src="a.jpg" alt="Research and Innovation">
+        <div class="floating-badge">
+            <i class="fa-solid fa-flask"></i>
+            <span>RESEARCH <strong>INNOVATION</strong></span>
+        </div>
+    </div>
+
+    <div class="feature-content">
+        <p class="gold-text">THE SCIENCE HIGH EXPERIENCE</p>
+        <h2>Ideas begin with a <span>question.</span></h2>
+        <p>
+            Students are encouraged to observe, investigate,
+            experiment, collaborate, and communicate their ideas.
+        </p>
+        <a href="#gallery" class="btn dark-btn">
+            See Student Experiences <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     STUDENT LIFE
+===================================================== -->
+<section id="life" class="section life-section">
+
+    <div class="section-label">04 — STUDENT LIFE</div>
+
+    <div class="section-heading">
+        <div>
+            <p class="gold-text">BEYOND THE CLASSROOM</p>
+            <h2>Learn. <span>Connect.</span> Belong.</h2>
+        </div>
+        <p>
+            School life is made memorable by the people,
+            experiences, organizations, events, and moments
+            shared together.
+        </p>
+    </div>
+
+    <div class="life-grid">
+
+        <div class="life-photo tall"
+            onclick="openLifeModal('Student Activities','The Olympiad Trail Activity challenges students to complete tasks at different stations within a set time before moving on to the next challenge. The activity promotes teamwork, problem-solving, and quick thinking.')">
+            <img src="13.jpg" alt="Student Activities">
+            <div class="life-overlay">
+                <small>01</small>
+                <h3>Student Activities</h3>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+        </div>
+
+        <div class="life-photo"
+            onclick="openLifeModal('Organizations','Student organizations help learners build teamwork, communication, leadership, and responsibility.')">
+            <img src="11.jpg" alt="School Community">
+            <div class="life-overlay">
+                <small>02</small>
+                <h3>Event</h3>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+        </div>
+
+        <div class="life-photo"
+            onclick="openLifeModal('School Community','he TCSHS community brings together students, teachers, and staff in a supportive environment where collaboration, school spirit, and shared experiences help create lasting connections and meaningful memories.')">
+            <img src="3.jpg" alt="TCSHS Community">
+            <div class="life-overlay">
+                <small>03</small>
+                <h3>Our Community</h3>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ACHIEVEMENTS
+===================================================== -->
+<section id="achievements" class="achievement-section">
+
+    <div class="section-label light">05 — ACHIEVEMENTS</div>
+
+    <div class="section-heading light-heading">
+        <div>
+            <p class="gold-text">CELEBRATING EXCELLENCE</p>
+            <h2>Moments worth <span>remembering.</span></h2>
+        </div>
+    </div>
+
+    <div class="achievement-grid">
+
+        <article class="achievement-card" onclick="openAchievement(this)"
+            data-title="Academic Excellence"
+            data-category="ACADEMICS"
+            data-description="TCSHS STUDENT EARNS GOLD IN PIMO HEAT ROUND 2026 Grade 12 TCSHS student Mikaela Eunice Sabellano secured a Gold Award in the Philippine International Mathematical Olympiad (PIMO) Heat Round 2026, held online on March 8, 2026. Following her achievement, Sabellano qualified for the Final Round scheduled on September 5, 2026, representing TCSHS in the international mathematics competition."
+            data-image="10.jpg">
+            <img src="10.jpg" alt="Academic Achievement">
+            <div class="achievement-info">
+                <span>01 — ACADEMICS</span>
+                <h3>Academic Excellence</h3>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </article>
+
+        <article class="achievement-card" onclick="openAchievement(this)"
+            data-title="Science & Innovation"
+            data-category="RESEARCH"
+            data-description="SCIHIGH INNOVATORS SHINE AT NATIONAL MATERIALS SCIENCE AND ENGINEERING SUMMIT Toledo City Science High School researchers secured top placements at the National Materials Science and Engineering Summit held on November 28, 2025, at the University of the Philippines Diliman. The school earned 2nd Place in Alternative Renewable Energy through CHARGE CS-TENG and 3rd Place in Sustainable Seawater Desalination through CHB-SIE, highlighting the students’ work in renewable energy and sustainable technology."
+            data-image="8.jpg">
+            <img src="8.jpg" alt="Science Achievement">
+            <div class="achievement-info">
+                <span>02 — RESEARCH</span>
+                <h3>Science &amp; Innovation</h3>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </article>
+
+        <article class="achievement-card" onclick="openAchievement(this)"
+            data-title="Student Excellence"
+            data-category="STUDENT LIFE"
+            data-description="Toledo City Science High School (TCSHS) proudly claims the 1st Grand Award in the Science News Video Report at the National Science and Engineering Fair (NSEF) 2026! 🥇
+With this year’s theme, “STEM in Action: Innovating a Better World,” our team showcased creativity, communication, and technological skills on a virtual stage, proving that innovation knows no boundaries."
+            data-image="nsef.jpg">
+            <img src="nsef.jpg" alt="Student Achievement">
+            <div class="achievement-info">
+                <span>03 — STUDENTS</span>
+                <h3>Student Excellence</h3>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     THE HOUSES
+===================================================== -->
+<section id="houses" class="section houses-section">
+
+    <div class="section-label">06 — THE HOUSES</div>
+
+    <div class="section-heading">
+        <div>
+            <p class="gold-text">ONE SCIENCE FAMILY</p>
+            <h2>Four houses. <span>One TCSHS.</span></h2>
+        </div>
+        <p>
+            Every TCSHS student belongs to a house. Compete,
+            collaborate, and earn points for your colors.
+        </p>
+    </div>
+
+    <div class="house-grid">
+
+        <article class="house-card reveal" style="--house:#2f7bff" data-house="manthanein">
+            <div class="house-glyph">M</div>
+            <small>SNSKRIT • "REFLECTION"</small>
+            <h3>Manthanein</h3>
+            <p>Mathematics
+Inspired by the Sanskrit word manthana, meaning reflection, contemplation, or deep thought, Manthanaean symbolizes logical reasoning, intellectual curiosity, and the pursuit of understanding.</p>
+        </article>
+
+        <article class="house-card reveal" style="--house:#e8453c" data-house="techne">
+            <div class="house-glyph">T</div>
+            <small>GREEK • "ART/CRAFT"</small>
+            <h3>Techne</h3>
+            <p>Technology
+Derived from the Greek word technē, meaning art, craft, or skill, Techne represents human ingenuity and the application of knowledge to create useful tools, techniques, and innovations..</p>
+        </article>
+
+        <article class="house-card reveal" style="--house:#2fb36b" data-house="scire">
+            <div class="house-glyph">S</div>
+            <small>LATIN • "TO KNOW"</small>
+            <h3>Scire</h3>
+            <p>Science
+Derived from the Latin word scire, meaning “to know,” Scire embodies curiosity, discovery, and the continuous pursuit of knowledge through observation and investigation..</p>
+        </article>
+
+        <article class="house-card reveal" style="--house:#d4a72c" data-house="handasa">
+            <div class="house-glyph">H</div>
+            <small>ARABIC • "ENGINEERING"</small>
+            <h3>Handasa</h3>
+            <p>Engineering
+Inspired by the Arabic word for engineering and geometry, Handasa represents the art of designing, building, and creating practical solutions through innovation and precision.</p>
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     DISCOVER YOUR ELEMENT
+===================================================== -->
+<section id="element" class="element-section">
+    <div class="element-wrap">
+
+        <div class="element-intro">
+            <div class="section-label light">07 — YOUR ELEMENT</div>
+            <p class="gold-text">ONLY AT TCSHS</p>
+            <h2>Discover your <span>element.</span></h2>
+            <p>
+                Every scientist has a place on the table. Type your name
+                and TCSHS will create your own element card, unique to you.
+                Download it and share it with your friends.
+            </p>
+
+            <div class="element-form">
+                <input id="elName" type="text" maxlength="24" placeholder="Type your name" autocomplete="off">
+                <button class="btn btn-gold" onclick="makeElement()">
+                    Generate <i class="fa-solid fa-atom"></i>
+                </button>
+            </div>
+
+                        <div class="house-pick" id="housePick">
+                <small>YOUR HOUSE</small>
+                <button class="on" onclick="pickHouse('', this)">Auto</button>
+                <button onclick="pickHouse('manthanein', this)"><i style="--c:#2f7bff"></i>Manthanein</button>
+                <button onclick="pickHouse('scire', this)"><i style="--c:#2fb36b"></i>Scire</button>
+                <button onclick="pickHouse('handasa', this)"><i style="--c:#d4a72c"></i>Handasa</button>
+                <button onclick="pickHouse('techne', this)"><i style="--c:#e8453c"></i>Techne</button>
+            </div>
+
+            <button class="btn btn-outline" onclick="downloadElement()">
+                Download Card <i class="fa-solid fa-download"></i>
+            </button>
+
+        </div>
+
+        <div class="element-stage">
+            <canvas id="elementCanvas" width="600" height="800"></canvas>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =====================================================
+     GALLERY
+===================================================== -->
+<section id="gallery" class="section gallery-section">
+
+    <div class="section-label">08 — GALLERY</div>
+
+    <div class="gallery-header">
+        <div>
+            <p class="gold-text">A GLIMPSE OF TCSHS</p>
+            <h2>Moments in <span>motion.</span></h2>
+        </div>
+        <p>Click any photo to view it larger.</p>
+    </div>
+
+    <div class="gallery-track">
+
+        <div class="gallery-item big" onclick="openGallery(this)">
+            <img src="11.jpg" alt="TCSHS Gallery">
+            <span>01</span>
+        </div>
+
+        <div class="gallery-item" onclick="openGallery(this)">
+            <img src="4.jpg" alt="TCSHS Gallery">
+            <span>02</span>
+        </div>
+
+        <div class="gallery-item" onclick="openGallery(this)">
+            <img src="7.jpg" alt="TCSHS Gallery">
+            <span>03</span>
+        </div>
+
+        <div class="gallery-item" onclick="openGallery(this)">
+            <img src="3.jpg" alt="TCSHS Campus">
+            <span>04</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     HOW TO APPLY
+===================================================== -->
+<section id="how-to-apply" class="section apply-section">
+
+    <div class="section-label">09 — HOW TO APPLY</div>
+
+    <div class="section-heading">
+        <div>
+            <p class="gold-text">YOUR PATH TO TCSHS</p>
+            <h2>Five steps to <span>get in.</span></h2>
+        </div>
+        <p>
+            Follow the steps below. Check the official TCSHS
+            announcements for exact dates and requirements.
+        </p>
+    </div>
+
+    <div class="apply-steps">
+        <!-- CHANGE THE TEXT TO MATCH THE OFFICIAL PROCESS -->
+
+        <div class="apply-step reveal">
+            <div class="step-num">01</div>
+            <i class="fa-solid fa-bullhorn"></i>
+            <h4>Watch for the Announcement</h4>
+            <p>Follow the official TCSHS Facebook page for the opening of admissions.</p>
+        </div>
+
+        <div class="apply-step reveal">
+            <div class="step-num">02</div>
+            <i class="fa-solid fa-folder-open"></i>
+            <h4>Prepare Requirements</h4>
+            <p>Gather your report card, birth certificate, and other required documents.</p>
+        </div>
+
+        <div class="apply-step reveal">
+            <div class="step-num">03</div>
+            <i class="fa-solid fa-file-pen"></i>
+            <h4>Submit Application</h4>
+            <p>Fill out the application form online or submit it at the school.</p>
+        </div>
+
+        <div class="apply-step reveal">
+            <div class="step-num">04</div>
+            <i class="fa-solid fa-pencil"></i>
+            <h4>Take the Entrance Exam</h4>
+            <p>Show your skills in science, math, and problem-solving.</p>
+        </div>
+
+        <div class="apply-step reveal">
+            <div class="step-num">05</div>
+            <i class="fa-solid fa-champagne-glasses"></i>
+            <h4>Get Sorted &amp; Enroll</h4>
+            <p>Check the results, complete enrollment, and meet your house!</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ADMISSION PORTAL
+===================================================== -->
+<section id="admission-portal" class="admission-section">
+
+    <div class="admission-glow"></div>
+
+    <div class="admission-container">
+
+        <div class="section-label light">10 — ADMISSIONS</div>
+
+        <div class="admission-grid">
+
+            <div class="admission-intro">
+
+                <p class="gold-text">YOUR NEXT CHAPTER STARTS HERE</p>
+
+                <h2>Ready to <span>apply?</span></h2>
+
+                <p>
+                    Explore the admission process, prepare your
+                    requirements, and take the first step toward
+                    becoming part of the TCSHS community.
+                </p>
+
+                <button class="portal-button" onclick="toggleAdmission()">
+                    Open Admission Portal <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+            <div class="admission-preview">
+
+                <div class="portal-top">
+                    <div class="portal-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <small>TCSHS ADMISSION PORTAL</small>
+                </div>
+
+                <div class="portal-content">
+                    <div class="portal-number">01</div>
+                    <div>
+                        <span>APPLICATION</span>
+                        <strong>Start your journey.</strong>
+                    </div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PORTAL DETAILS -->
+        <div id="admissionPanel" class="admission-panel">
+
+            <div class="panel-heading">
+                <div>
+                    <p class="gold-text">TCSHS ADMISSION</p>
+                    <h3>Admission <span>Portal</span></h3>
+                </div>
+                <button onclick="toggleAdmission()" class="close-panel">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="portal-options">
+
+                <div class="portal-option" onclick="showPortalMessage('Application Information')">
+                    <div class="option-icon"><i class="fa-solid fa-file-lines"></i></div>
+                    <div>
+                        <small>STEP 01</small>
+                        <h4>Application Information</h4>
+                        <p>Learn about the application process and important reminders.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+                <div class="portal-option" onclick="showPortalMessage('Requirements')">
+                    <div class="option-icon"><i class="fa-solid fa-list-check"></i></div>
+                    <div>
+                        <small>STEP 02</small>
+                        <h4>Requirements</h4>
+                        <p>Review the documents and information applicants may need to prepare.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+               <a href="https://www.facebook.com/share/p/19kraT5DX2/">
+                <div class="portal-option" onclick="showPortalMessage('Application Link')">
+                    <div class="option-icon"><i class="fa-solid fa-paper-plane"></i></div>
+                    <div>
+                        <small>STEP 03</small>
+                        <h4>Application Link</h4>
+
+                    </div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+            </div>
+
+            <div class="portal-note">
+                <i class="fa-solid fa-circle-info"></i>
+                </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT (with map)
+===================================================== -->
+<section id="contact" class="contact-section">
+
+    <div class="contact-grid">
+
+        <div>
+            <p class="gold-text">GET IN TOUCH</p>
+            <h2>Let's <span>connect.</span></h2>
+        </div>
+
+        <div class="contact-details">
+            <!-- CHANGE CONTACT DETAILS HERE -->
+            <a href=""https://www.google.com/maps/search/?api=1&query=Toledo+City+Science+High+School+Cebu"
+       target="_blank" rel="noopener noreferrer"">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Toledo City, Cebu</span>
+            </a>
+            <a href="
+mailto:303315@deped.gov.ph">
+                <i class="fa-solid fa-envelope"></i>
+                <span>
+303315@deped.gov.ph</span>
+            </a>
+            <a href="tel:+63 906 444 0876">
+                <i class="fa-solid fa-phone"></i>
+                <span>
+0906 444 0876</span>
+            </a>
+            <a href="https://www.facebook.com/tcshs1996">
+                <i class="fa-brands fa-facebook"></i>
+                <span>Toledo City Science High School - DepEd Toledo City Region 7
+</span>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- GOOGLE MAP (for an exact pin: Google Maps > Share > Embed a map > replace src) -->
+    <div class="map-wrap">
+        <iframe
+            title="Toledo City Science High School Map"
+            src="https://www.google.com/maps?q=Toledo+City+Science+High+School,+Toledo+City,+Cebu&output=embed"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PROGRAMMERS
+===================================================== -->
+<section id="developers" class="developers-section">
+
+    <div class="section-label">11 — THE DEVELOPERS</div>
+
+    <div class="developers-heading">
+        <p class="gold-text">DESIGNED &amp; DEVELOPED BY</p>
+        <h2>Three minds. <span>One website.</span></h2>
+        <p>
+            This website was created as a digital platform
+            celebrating the TCSHS community.
+        </p>
+    </div>
+
+    <div class="developer-grid">
+
+        <!-- PROGRAMMER 1 -->
+        <div class="developer-card">
+            <div class="developer-image">
+                <!-- CHANGE PHOTO HERE -->
+                <img src="cheng.jpg" alt="Programmer 1">
+                <div class="developer-number">01</div>
+            </div>
+            <div class="developer-info">
+                <!-- CHANGE NAME HERE -->
+                <span>PROGRAMMER</span>
+                <h3>Kathleen Cheng</h3>
+                <p>Web Design &amp; Development</p>
+            </div>
+        </div>
+
+        <!-- PROGRAMMER 2 -->
+        <div class="developer-card">
+            <div class="developer-image">
+                <img src="15.jpg" alt="Programmer 2">
+                <div class="developer-number">02</div>
+            </div>
+            <div class="developer-info">
+                <span>PROGRAMMER</span>
+                <h3>Jillian Khae Costanilla</h3>
+                <p>Front-End Development</p>
+            </div>
+        </div>
+
+        <!-- PROGRAMMER 3 -->
+        <div class="developer-card">
+            <div class="developer-image">
+                <img src="myca.jpg" alt="Programmer 3">
+                <div class="developer-number">03</div>
+            </div>
+            <div class="developer-info">
+                <span>PROGRAMMER</span>
+                <h3>Myca Castro</h3>
+                <p>UI / UX &amp; Development</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+<footer>
+
+    <div class="footer-main">
+
+        <div class="footer-brand">
+            <img src="logo.jpg" alt="TCSHS Logo">
+            <div>
+                <strong>
+                    TOLEDO CITY
+                    <span>SCIENCE HIGH SCHOOL</span>
+                </strong>
+                <p>Science • Innovation • Excellence</p>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#academics">Academics</a>
+            <a href="#houses">Houses</a>
+            <a href="#how-to-apply">How to Apply</a>
+            <a href="#admission-portal">Admissions</a>
+            <a href="#developers">Developers</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <span>© 2026 Toledo City Science High School</span>
+        <span>Designed &amp; Developed for TCSHS</span>
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     GENERAL MODAL
+===================================================== -->
+<div id="infoModal" class="modal" onclick="closeModal(event)">
+    <div class="modal-box" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeInfoModal()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <p class="gold-text">TCSHS</p>
+        <h2 id="modalTitle">Title</h2>
+        <p id="modalText">Description</p>
+    </div>
+</div>
+
+
+<!-- =====================================================
+     ACHIEVEMENT MODAL
+===================================================== -->
+<div id="achievementModal" class="photo-modal" onclick="closeAchievement(event)">
+    <div class="photo-modal-box" onclick="event.stopPropagation()">
+        <button onclick="closeAchievement()" class="modal-close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <img id="achievementImage" src="" alt="">
+        <div class="photo-modal-info">
+            <span id="achievementCategory">CATEGORY</span>
+            <h2 id="achievementTitle">Achievement</h2>
+            <p id="achievementDescription">Description</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- =====================================================
+     GALLERY MODAL
+===================================================== -->
+<div id="galleryModal" class="photo-modal" onclick="closeGallery()">
+    <div class="gallery-modal-box" onclick="event.stopPropagation()">
+        <button onclick="closeGallery()" class="modal-close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <img id="galleryModalImage" src="" alt="">
+    </div>
+</div>
+
+
+<!-- =====================================================
+     LIFE MODAL
+===================================================== -->
+<div id="lifeModal" class="modal" onclick="closeLifeModal(event)">
+    <div class="modal-box" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeLifeModal()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <p class="gold-text">STUDENT LIFE</p>
+        <h2 id="lifeModalTitle">Student Life</h2>
+        <p id="lifeModalText">Description</p>
+    </div>
+</div>
+
+
+<!-- =====================================================
+     CONFETTI CANVAS
+===================================================== -->
+<canvas id="confetti"></canvas>
+
+<!-- JAVASCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
